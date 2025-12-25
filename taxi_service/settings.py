@@ -44,9 +44,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "debug_toolbar",
     "taxi",
-    "crispy",
     "crispy_forms",
-    "crispy_bootstrap5"
+    "crispy_bootstrap4"
 ]
 
 MIDDLEWARE = [
@@ -114,9 +113,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 
-CRISPY_TEMPLATE_PACK = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 AUTH_USER_MODEL = "taxi.Driver"
 
