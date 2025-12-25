@@ -24,7 +24,7 @@ SECRET_KEY = (
     "django-insecure-8ovil3xu6=eaoqd#-#&ricv159p0pypoh5_lgm*)-dfcjqe=yc"
 )
 
-# SECURITY WARNING: don"t run with debug turned on in production!
+# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "debug_toolbar",
     "taxi",
+    "crispy",
+    "crispy_forms",
+    "crispy_bootstrap5"
 ]
 
 MIDDLEWARE = [
@@ -110,6 +113,10 @@ AUTH_PASSWORD_VALIDATORS = [
         "NumericPasswordValidator",
     },
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 AUTH_USER_MODEL = "taxi.Driver"
 
